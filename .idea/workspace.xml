@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a184023-7d06-48f9-98b1-4f25c5637d64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1013" />
+          <entry key="html" value="1023" />
           <entry key="py" value="1462" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1013" />
+          <entry key="HTML" value="1023" />
           <entry key="Python" value="1462" />
         </counts>
       </usages-collector>
@@ -73,20 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="-2177">
+              <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="238">
+              <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -168,8 +168,8 @@
         <option value="$PROJECT_DIR$/templates/post.html" />
         <option value="$PROJECT_DIR$/templates/head.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/footer.html" />
         <option value="$PROJECT_DIR$/templates/blog.html" />
+        <option value="$PROJECT_DIR$/templates/footer.html" />
       </list>
     </option>
   </component>
@@ -180,8 +180,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="208" />
-    <option name="y" value="111" />
+    <option name="x" value="346" />
+    <option name="y" value="270" />
     <option name="width" value="1232" />
     <option name="height" value="736" />
   </component>
@@ -269,7 +269,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="208" y="111" width="1232" height="736" extended-state="0" />
+    <frame x="346" y="270" width="1232" height="736" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25378153" />
@@ -440,17 +440,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/footer.html">
+    <entry file="file://$PROJECT_DIR$/templates/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="-2177">
+          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog.html">
+    <entry file="file://$PROJECT_DIR$/templates/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="238">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
         </state>
       </provider>
     </entry>
