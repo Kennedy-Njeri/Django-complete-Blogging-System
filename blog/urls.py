@@ -8,8 +8,8 @@ from posts.views import index, blog, post
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('blog/', blog, name='blog'),
-    path('post/', post, name='post'),
+    path('blog/', blog, name='post-list'),
+    path('post/<id>', post, name='post-detail'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
