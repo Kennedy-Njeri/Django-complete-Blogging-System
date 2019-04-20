@@ -1,8 +1,30 @@
 from django.shortcuts import render
 from . models import Post
-from django.db.models import Count
+from django.db.models import Count, Q
 from marketing.models import SignUp
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
+
+
+def search(request):
+    queryset = Post.objects.all()
+    query = request.GET.get('q')
+    if query:
+        queryset = queryset.filter(
+
+            Q(title__icontains=query) |
+            Q(overview__icontains=query)
+
+        ).distinct()
+
+    context = {
+        'queryset': queryset
+    }
+
+    return render(request, 'search_results.html', context)
+
+
+
 
 
 def get_category_count():
@@ -41,7 +63,7 @@ def blog(request):
 
     category_count = get_category_count()
 
-    print (category_count)
+    #print (category_count)
 
     most_recent = Post.objects.order_by('-timestamp')[:3]
 
