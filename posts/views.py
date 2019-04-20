@@ -31,7 +31,7 @@ def blog(request):
 
     post_list = Post.objects.all()
 
-    paginator = Paginator(post_list, 1)
+    paginator = Paginator(post_list, 4)
 
     page_request_var = 'page'
 
@@ -50,7 +50,7 @@ def blog(request):
 
     context = {
 
-        'post_list':  paginated_queryset,
+        'queryset':  paginated_queryset,
 
         'page_request_var': page_request_var
 
