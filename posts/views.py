@@ -1,8 +1,9 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from . models import Post
 from django.db.models import Count, Q
 from marketing.models import SignUp
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from .forms import CommentForm
 
 
 
@@ -115,11 +116,26 @@ def post(request, id):
 
     post = get_object_or_404(Post, id=id)
 
+    form = CommentForm(request.POST or None)
+
+    if request.method == "POST":
+        if form.is_valid():
+            form.instance.user = request.user
+            form.instance.post = post
+            form.save()
+            return redirect(reverse("post-detail", kwargs={
+                'id': post.pk
+            }))
+
+
+
+
     context = {
 
         'post': post,
         'category_count': category_count,
         'most_recent': most_recent,
+        'form':form
 
     }
 
