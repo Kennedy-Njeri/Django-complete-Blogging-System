@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'posts',
     'marketing',
     'tinymce',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,7 @@ TINYMCE_DEFAULT_CONFIG = {
     'menubar': True,
     'statusbar': True,
     }
+
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
