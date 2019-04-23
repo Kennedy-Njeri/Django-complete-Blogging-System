@@ -1,9 +1,17 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from . models import Post
+from . models import Post, Author
 from django.db.models import Count, Q
 from marketing.models import SignUp
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .forms import CommentForm, PostForm
+
+
+def get_author(user):
+    qs = Author.objects.filter(user=user)
+    if qs.exists():
+        return qs[0]
+    return None
+
 
 
 
@@ -147,9 +155,11 @@ def post(request, id):
 
 
 def post_create(request):
-    form = PostForm(request.POST or None)
+    form = PostForm(request.POST or None, request.FILES or None)
+    author = get_author(request.user)
     if request.method == "POST":
         if form.is_valid():
+            form.instance.author = author
             form.save()
             return redirect(reverse("post-detail", kwargs={
                 'id': form.instance.id
