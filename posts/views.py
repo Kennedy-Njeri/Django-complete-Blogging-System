@@ -123,7 +123,8 @@ def post(request, id):
 
     post = get_object_or_404(Post, id=id)
 
-    PostView.objects.get_or_create(user=request.user, post=post)
+    if request.user.is_authenticated:
+         PostView.objects.get_or_create(user=request.user, post=post)
 
     form = CommentForm(request.POST or None)
 
