@@ -14,6 +14,9 @@ def get_author(user):
 
 
 
+
+
+
 def search(request):
 
     queryset = Post.objects.all()
