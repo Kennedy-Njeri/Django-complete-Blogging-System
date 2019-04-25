@@ -158,8 +158,6 @@ def post(request, id):
 
 
 
-
-
 def post_create(request):
     title = 'Create'
     form = PostForm(request.POST or None, request.FILES or None)
@@ -180,6 +178,8 @@ def post_create(request):
     }
 
     return render(request, "post_create.html", context)
+
+
 
 
 def post_update(request, id):
@@ -203,6 +203,8 @@ def post_update(request, id):
         'form': form
     }
     return render(request, "post_create.html", context)
+
+
 
 
 def post_delete(request, id):
