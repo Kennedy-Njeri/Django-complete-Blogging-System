@@ -72,6 +72,8 @@ def index(request):
 
 
 
+
+
 def blog(request):
 
     category_count = get_category_count()
@@ -113,6 +115,9 @@ def blog(request):
     }
 
     return render(request, 'blog.html', context)
+
+
+
 
 def post(request, id):
 
