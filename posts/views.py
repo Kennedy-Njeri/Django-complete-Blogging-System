@@ -46,8 +46,6 @@ def get_category_count():
     return queryset
 
 
-
-
 def index(request):
 
     featured = Post.objects.filter(featured=True)
