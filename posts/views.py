@@ -70,8 +70,6 @@ def index(request):
 
 
 
-
-
 def blog(request):
 
     category_count = get_category_count()
