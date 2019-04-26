@@ -119,6 +119,8 @@ def blog(request):
 
 
 
+
+
 def post(request, id):
 
     category_count = get_category_count()
