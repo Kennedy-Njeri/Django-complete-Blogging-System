@@ -13,6 +13,8 @@ def get_author(user):
     return None
 
 
+
+
 def search(request):
 
     queryset = Post.objects.all()
