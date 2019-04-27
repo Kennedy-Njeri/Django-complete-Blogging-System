@@ -41,6 +41,9 @@ def search(request):
 
 
 
+
+
+
 def get_category_count():
 
     queryset = Post.objects.values('categories__title').annotate(Count('categories__title'))
